@@ -1,0 +1,17 @@
+import random
+patient_name = input("Nhập tên bệnh nhân: ")
+gender = input("Nhập giới tính: ")
+year_of_birth = int(input("Nhập năm sinh "))
+phone_number = input("Nhập số điện thoại: ")
+email = input("Nhập email: ")
+symtom = input("Nhập triệu chứng ban đầu: ")
+expense = float(input("Nhập chi phí khám: "))
+
+print(" --- THẺ BỆNH NHÂN --- ")
+print(f"Mã BN: BN{year_of_birth}{random.randint(100, 999)} ")
+print(f"Tên: {patient_name} {type(patient_name)}")
+print(f"Giới tính: {gender} {type(gender)}")
+print(f"Điện thoại: {phone_number} {type(phone_number)}")
+print(f"Email: {email} {type(email)}")
+print(f"Triệu chứng: {symtom} {type(symtom)}")
+print(f"Chi phí: {expense} {type(expense)}")
